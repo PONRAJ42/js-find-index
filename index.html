@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="html,js">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>findIndex method</title>
+	
+	
+  
+</head> 
+	<body>
+		<script>
+			const employees = [
+				 { name: "David Carlson", age: 30 },
+				 { name: "John Cena", age: 34 },
+				 { name: "Mike Sheridan", age: 25 },
+				 { name: "John Carte", age: 50 }
+				];
+				
+				var p=employees.find(function(e){
+					return e.name.indexOf("John") >=0;
+					});
+					console.log(p);
+			var o=employees.findIndex(function(e){
+					return e.name.indexOf("John") >=0;
+					});
+					console.log(o);
+		</script>
+	</body>
+	</html>
